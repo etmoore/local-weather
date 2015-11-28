@@ -1,1 +1,13 @@
+body {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/65/Winter_forrest_-_near_Budapest,_Hungary.jpg');
+  background-size: cover;
+}
+
 h1 { color: blue; }
+
+.weatherbox {
+  margin: 0 auto;
+  width: 500px;
+  height: 200px;
+  background-color: #aaa;
+}
