@@ -18,7 +18,7 @@ function displayWeather(){
       html += "<p class='city'>" + json.name + "</p>";
       html += "<p class='temperature'>" + json.main.temp + " degrees </p>";
       html += "<p class='description'>" + json.weather[0].description + "</p>";
-      html += "<img src='http://openweathermap.org/img/w/" + json.weather[0].icon + ".png' alt='weather icon'>"
+      html += "<img class='weather-icon' src='http://openweathermap.org/img/w/" + json.weather[0].icon + ".png' alt='weather icon'>"
       document.getElementsByClassName('weatherbox')[0].innerHTML = html;
     }
   }
