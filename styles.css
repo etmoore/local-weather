@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
 }
 
 .wrapper {
@@ -11,7 +12,7 @@ h1 {
   color: #42B5DB;
   text-align: center;
   font-family: 'Annie Use Your Telescope', cursive;
-  font-size: 4em;
+  font-size: 3em;
   margin-bottom: 20px;
 }
 
