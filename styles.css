@@ -1,22 +1,48 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
+  background: url('https://farm6.staticflickr.com/5081/5252291555_3545c8c620_o_d.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 .wrapper {
-  max-width: 960px;
+  width: 500px;
   margin: 0 auto;
+  height: 500px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 3px 3px 19px -1px rgba(97,97,97,1);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
-  color: #42B5DB;
+  color: #6A94CC;
   text-align: center;
   font-family: 'Annie Use Your Telescope', cursive;
   font-size: 3em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding; 0px;
 }
 
-.weatherbox {
+p {
+  margin: 0px;
+}
+
+.weather-container {
+  height: 350px;
   margin: 0px 20px;
   padding: 0px 20px;
   text-align: center;
