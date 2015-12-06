@@ -11,7 +11,7 @@ body {
   height: 500px;
   /* border: 1px solid black; */
   border-radius: 50%;
-  background-color: white;
+  background-color: #eee;
   box-shadow: 3px 3px 19px -1px rgba(97,97,97,1);
 
   position: absolute;
@@ -44,10 +44,13 @@ p {
   text-align: center;
 }
 
-.city {
-
-}
-
 .weather-icon {
   width: 90px;
+  margin-bottom: -20px;
+}
+
+button {
+  padding: 8px;
+  background-color: #BCDDFC;
+  border-radius: 4px;
 }
