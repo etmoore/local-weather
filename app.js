@@ -15,13 +15,19 @@ function displayWeather(){
     if (httpRequest.status === 200){
       var json = JSON.parse(httpRequest.responseText);
       var html = '';
-      html += "<p class='city'>" + json.name + "</p>";
+      html += "<p class='city'><b>" + json.name + "</b></p>";
       html += "<p class='temperature'>" + json.main.temp + " degrees </p>";
       html += "<p class='description'>" + json.weather[0].description + "</p>";
+      html += "<p class='wind'> wind: " + json.wind.speed + "mph " + calculateWindDirection(json.wind.deg) + "</p>";
       html += "<img class='weather-icon' src='http://openweathermap.org/img/w/" + json.weather[0].icon + ".png' alt='weather icon'>"
       document.getElementsByClassName('forecast')[0].innerHTML = html;
     }
   }
+}
+
+function calculateWindDirection(degrees){
+  var compassPoints = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
+  return compassPoints[Math.round(degrees/45)];
 }
 
 function init(){
